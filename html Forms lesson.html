@@ -10,7 +10,11 @@
       }
     </style>
     <link rel="stylesheet" href="style.css" />
-    <script></script>
+    <script>
+      function say_hello() {
+        window.alert("HELLO USER");
+      }
+    </script>
   </head>
   <body>
     <from name="register">
@@ -29,6 +33,39 @@
       <input type="checkbox" name="checkbox" />
       <br />
       <input type="submit" name="submit button" value="login" />
+      <!-- above is forms part 1 -->
+      <!-- down is forms part 2 -->
+      <label>Trigger function</label>
+      <input
+        type="button"
+        name="trigger button"
+        value="do it"
+        onclick="say_hello()"
+      />
+      <input type="reset" />
+      <br />
+      <!--file type cannot be renamed via value attribute for safety-->
+      <input type="file" />
+      <br />
+      <input
+        type="image"
+        src="http://placekitten.com/400/300"
+        width="300px"
+        height="200px"
+      />
+      <br />
+      <label>favorite browser</label>
+      <br />
+      <input type="radio" name="browser" value="firefox" /> firefox <br />
+      <input type="radio" name="browser" value="chrome" /> chrome <br />
+      <input type="radio" name="browser" value="other" /> other
+      <br />
+      <label>favorite phone os</label>
+      <br />
+      <input type="radio" name="os" value="Andriod" /> Android<br />
+      <input type="radio" name="os" value="Windows" /> Windows <br />
+      <input type="radio" name="os" value="other" /> other <br />
     </from>
+    <!--below is Forms part 3  -->
   </body>
 </html>
