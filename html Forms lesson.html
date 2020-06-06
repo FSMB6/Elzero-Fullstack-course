@@ -8,6 +8,11 @@
       p {
         color: red;
       }
+      fieldset{
+        background-color: #eeeeee;
+        margin: 5px;
+        width: 1500px;
+      }
     </style>
     <link rel="stylesheet" href="style.css" />
     <script>
@@ -16,8 +21,11 @@
       }
     </script>
   </head>
+
   <body>
-    <from name="register">
+    <form name="register">
+      <fieldset>
+        <legend>personal information</legend>
       <label>Username</label>
       <input type="text" name="Username" value="Banana" maxlength="10" />
       <br />
@@ -29,6 +37,14 @@
         minlength="5"
       />
       <br />
+
+      <textarea name="about yourself" row="4" cols="30" readonly>
+about yourself:</textarea
+      >
+      <br />
+      </fieldset>
+
+      <fieldset>
       <label>Remember me as user</label>
       <input type="checkbox" name="checkbox" />
       <br />
@@ -47,6 +63,21 @@
       <!--file type cannot be renamed via value attribute for safety-->
       <input type="file" />
       <br />
+
+      <select name="age" size="1">
+        <optgroup label="too yong" disabled>
+          <option value="1">4</option>
+          <option value="2">5</option> 
+          <option value="3">6</option>
+        </optgroup>
+        <optgroup label="focused group">
+          <option value="4" selected>in the 20's</option>
+          <option value="5">in the 30's</option>          
+          <option value="6" disabled>older</option>
+        </optgroup>
+      </select>
+      <!--
+      this kind of input is for returning the particular point the user has clicked in the image   
       <input
         type="image"
         src="http://placekitten.com/400/300"
@@ -54,6 +85,11 @@
         height="200px"
       />
       <br />
+      -->
+      </fieldset>
+
+      <fieldset>
+        <legend>preference</legend>
       <label>favorite browser</label>
       <br />
       <input type="radio" name="browser" value="firefox" /> firefox <br />
@@ -62,10 +98,11 @@
       <br />
       <label>favorite phone os</label>
       <br />
-      <input type="radio" name="os" value="Andriod" /> Android<br />
+      <input type="radio" name="os" value="Android" /> Android<br />
       <input type="radio" name="os" value="Windows" /> Windows <br />
       <input type="radio" name="os" value="other" /> other <br />
+      </fieldset>
     </from>
-    <!--below is Forms part 3  -->
+    <!--part 3 includes textarea, fieldset, legend, select, option  -->
   </body>
 </html>
