@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name='description' content='applying what I've learnt in the course so
+    far'>
+    <title>Making Forms</title>
+    <style>
+      fieldset {
+        margin: 10px;
+        background: #fff;
+      }
+      body {
+        background: #eee;
+      }
+    </style>
+    <link rel="stylesheet" href="styleFile.css" />
+    <script></script>
+  </head>
+  <body>
+    <form name="homepage">
+      <fieldset>
+        <legend>login info</legend>
+        <label>Enter your name</label>
+        <input type="text" name="username" placeholder="Enter username" />
+        <br />
+        <label>Enter your password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          minlength="6"
+        />
+        <br />
+        <textarea name="about user" rows="3" cols="30">
+about yourself: </textarea
+        ><br />
+        <label>remember me</label>
+        <input type="checkbox" name="remember me checkbox" /><br />
+        <input type="submit" name="submitting data" value="click for submit" />
+      </fieldset>
+
+      <fieldset>
+        <legend>additional options</legend>
+        <label>reset your information </label>
+        <input type="reset" />
+        <label>for more information about the page</label>
+        <input
+          type="button"
+          name="print info"
+          value="print page info"
+          onclick="print_info()"
+        />
+
+        <br />
+        enter your age:
+        <select name="time">
+          <optgroup label="yong" disabled>
+            <option name="" value="1">5</option>
+            <option name="" value="2">6</option>
+            <option name="" value="3">7</option>
+          </optgroup>
+          <optgroup label="amateur enough">
+            <option value="4">15</option>
+            <option value="4">16</option>
+            <option value="4">17</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>favorite</legend>
+        <label>browser</label> <br />
+        <input type="radio" name="browser" value="Firefox" />Fire fox <br />
+        <input type="radio" name="browser" value="Chrome" />Chrome <br />
+        <input type="radio" name="browser" value="Opera" />Opera <br />
+        <input type="radio" name="browser" value="Other browser" />Other
+        <hr />
+        <label>OS</label> <br />
+        <input type="radio" name="OS" value="windows" /> windows <br />
+        <input type="radio" name="OS" value="Linux" /> Linux <br />
+        <input type="radio" name="OS" value="Linux" /> Android <br />
+        <input type="radio" name="OS" value="Linux" /> mac
+      </fieldset>
+    </form>
+  </body>
+</html>
