@@ -1,0 +1,61 @@
+/* normalizing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* main header style */
+.main {
+  background: #aaa;
+  text-align: center;
+  padding: 10px;
+}
+
+/* start nav */
+nav {
+  background: #efefef;
+}
+nav ul {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #2222ff;
+}
+
+nav ul li:after {
+  content: " |";
+}
+
+nav ul li:last-child:after {
+  content: "";
+}
+/* end nav */
+
+/* start article */
+article {
+  margin: 20px;
+  background: #efefef;
+  border: 1px solid #999;
+}
+
+article header {
+  background: #fcccfd;
+  color: #339;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+article section {
+  margin: 5px;
+}
+/* end article */
+
+footer {
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 10px;
+}

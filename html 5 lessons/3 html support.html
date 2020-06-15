@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This page is for demonstrating how to provide support for old browser that don't know html5"
+    />
+    <title>HTML support</title>
+    <style>
+      article {
+        background-color: red;
+        color: white;
+      }
+      custom {
+        display: block;
+        font-weight: bold;
+        background: lightblue;
+      }
+    </style>
+    <!--[if lt IE 9]>   
+    <script src="html5shiv-master\dist\html5shiv.min.js">
+      //search for html shiv or
+      //download the file from github via this link https://github.com/aFarkas/html5shiv
+      //what will this File do is provide the support you need for all the new html5 elements
+      //which old browser doesn't support and will not apply any styling on them
+    </script>
+<[end if]-->
+    <!--The (if statement) above tills if the browser less than IE 9 (old) run the script above-->
+
+    <script>
+      //and this how to create element manually
+      document.createElement("article"); //This element is already provided by html5, but we creating it as example
+      document.createElement("custom"); //I made this by my own, This is how you make custom element
+    </script>
+  </head>
+
+  <body>
+    <article>
+      <section>article section</section>
+    </article>
+    <custom> First Custom Element yeay!! </custom>
+    If I didn't create the element above by myself it wouldn't be styled in old
+    browsers that doesn't support html5 <br />
+    <strong>HTML5</strong> doesn't need elements to be created like you did in
+    <strong>javascript</strong>
+  </body>
+</html>
