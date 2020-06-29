@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="This is new webpage for the new tags:Main, Aside"
+      content="This is new webpage for the new tags:Progress, Meter"
     />
-    <title>New tags part2</title>
+    <title>New tags part3</title>
     <style></style>
     <link rel="stylesheet" href="5 and 6 new tags.css" />
     <!--[if lt IE 9]>   
@@ -49,6 +49,10 @@
             this will help you remember what you have learned ☺ <br />
             this article content no.1
           </p>
+          <div>
+            Design: <progress value="4" max="10"></progress> <br />
+            potatoes: <progress></progress>
+          </div>
         </section>
       </article>
 
@@ -90,6 +94,24 @@
           <a href=""><li>multimedia element</li></a>
         </ul>
       </section>
+      <section class="meter">
+        <h3>performance</h3>
+        Cpu:
+        <meter min="0" max="10" value="6" low="5" high="8" optimum="7"></meter>
+        server:
+        <meter min="0" max="10" value="6" low="3" high="7" optimum="6"> </meter>
+        <br />
+        crowdedness:
+        <meter min="0" max="10" value="2" low="3" high="7" optimum="8"></meter>
+        <br />
+        stupidness:
+        <meter min="0" max="10" value="8" low="3" high="7" optimum="2"></meter>
+        <br />
+        <!--The default values for min is 0 and max is 1
+        and you can see the meter cases here
+        https://codepen.io/pankajparashar/pen/GnFpA?__cf_chl_jschl_tk__=52b99c43135174670f3fb57c7b06333d5ae8f52d-1592480174-0-AXH9yT7rFTN-sY6_koh0SXTyPplCXjXqhaanxYkX5bubHezj2J7NAlvKQ8OqoI8O5e3-KBEsjIrWmF-Lfm-Yp8E_j92P-3rQzbEkDaM8staa4DSooKBVp4AMo2JGlOFbFvJZ_7FHYR89tXoxTXYHXL3WudI5w-XrNyd1h_jbU88x8zHbYmvh4Y03bIYrZwWbOJJQR7F_V7vWBpe2wv7g-nb1Z5DRM2NKlWty3-LLNlgv7KLcnQsVbc4s-zXSjJiKgzjmPeaShGKNkgGigW-meBMPyWlfnvZ6gFUI8EAxEwlSgGNk5Vf0MyaQ17Pb4P1AFraQnF7PIr-8hhTSGfMVguNi-ndJRTgZr4mREkDPXEv_
+        -->
+      </section>
     </aside>
     <!-- end sidebar -->
 
@@ -98,3 +120,4 @@
     <footer>Copyright 2015 &copy; All Right Reserved</footer>
   </body>
 </html>
+

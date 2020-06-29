@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This is new webpage for the new tags: datalist"
+    />
+    <!--wbr stands for (Word Break Opportunity)-->
+    <title>New Form elements part1</title>
+    <style></style>
+    <link rel="stylesheet" href="7 new tags.css" />
+    <!--[if lt IE 9]>   
+    <script src="html5shiv-master\dist\html5shiv.min.js"> </script>
+    <[end if]-->
+    <script></script>
+  </head>
+
+  <body>
+    <header class="main">
+      <h1>FSMB6 html5 webpage</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>services</li>
+        <li>contact us</li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- The main tag is big boss u can but articles inside it but you can't do the opposite -->
+      <!-- also the main tag occurs once in your website -->
+      <p>
+        welcome to Elzero course <span>studied by <mark> FSMB6</mark></span>
+      </p>
+    </main>
+
+    <!-- start article -->
+    <div class="post">
+      <article>
+        <header>
+          <h3>why am I doing this? article no.1</h3>
+          <p>
+            created be <span>FSMB6</span> in
+            <time datetime="2020-60-12 16:24:50">12/6/2020</time>
+            <!-- the datetime is the proper format that will make the browser able to understand what time is it -->
+          </p>
+        </header>
+        <section>
+          <p>
+            Training makes success, for making webpages it is essential to
+            practice more and more until you make it. <br />
+            this will help you remember what you have learned ☺ <br />
+            this article content no.1
+          </p>
+          <div>
+            Design: <progress value="4" max="10"></progress> <br />
+            potatoes: <progress></progress>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>article about &ltdetails&gt article no.2</h3>
+          <p>created be <span>FSMB6</span> in <span>12/6/2020</span></p>
+        </header>
+        <section>
+          <p>
+            this article content no.2
+          </p>
+          <details>
+            <summary> references</summary>
+            <ul>
+              <li><a href="">ref #1</a></li>
+              <li>ref #2</li>
+              <li>ref #3</li>
+            </ul>
+          </details>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>article about &ltwbr&gt article no.3</h3>
+          <p>created be <span>FSMB6</span> in <span>12/6/2020</span></p>
+        </header>
+        <section>
+          <p>
+            this article content no.3
+          </p>
+          <p style="width: 200px;">
+            This is a very useless text to demonstrate what is wbr. wbr stands
+            for wordbreak<wbr /><abbr
+              title="wbr tag made opportunity for the text wordbreakopporunity to be splitted into two lines"
+              >opportunity</abbr
+            >
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>article about a code for printing in js</h3>
+          <p>created be <span>FSMB6</span> in <span>12/6/2020</span></p>
+        </header>
+
+        <section>
+          <p style="color: #888;">
+            I'm just trying to use what I've learnt so far don't judge me
+          </p>
+          <figure>
+            <figcaption>This is how to print output in js</figcaption>
+            <code>
+              document.write('something');
+            </code>
+          </figure>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>article about cat figure article no.5</h3>
+          <p>created be <span>FSMB6</span> in <span>12/6/2020</span></p>
+        </header>
+        <section>
+          <p>
+            this article content no.5
+          </p>
+          <p>This code describes image figures</p>
+          <dialog open>Is it wednesday My dudes?</dialog>
+          <figure class="img-figure">
+            <img src="http://placekitten.com/200/300" alt="cat picture" />
+            <img src="http://placekitten.com/200/300" alt="cat picture" />
+            <figcaption>
+              figure: 1. It doesn't have to be only in pictures.
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+    </div>
+    <!-- end article -->
+
+    <!-- start sidebar -->
+    <aside>
+      <section class="links">
+        <h3>Catagories</h3>
+        <ul>
+          <a href=""><li>intro</li></a>
+          <a href=""><li>semantics</li></a>
+          <a href=""><li>api</li></a>
+          <a href=""><li>new attributes</li></a>
+          <a href=""><li>multimedia element</li></a>
+        </ul>
+      </section>
+      <section class="meter">
+        <h3>performance</h3>
+        Cpu:
+        <meter min="0" max="10" value="6" low="5" high="8" optimum="7"></meter>
+        server:
+        <meter min="0" max="10" value="6" low="3" high="7" optimum="6"> </meter>
+        <br />
+        crowdedness:
+        <meter min="0" max="10" value="2" low="3" high="7" optimum="8"></meter>
+        <br />
+        stupidness:
+        <meter min="0" max="10" value="8" low="3" high="7" optimum="2"></meter>
+        <br />
+        <!--The default values for min is 0 and max is 1
+        and you can see the meter cases here
+        https://codepen.io/pankajparashar/pen/GnFpA?__cf_chl_jschl_tk__=52b99c43135174670f3fb57c7b06333d5ae8f52d-1592480174-0-AXH9yT7rFTN-sY6_koh0SXTyPplCXjXqhaanxYkX5bubHezj2J7NAlvKQ8OqoI8O5e3-KBEsjIrWmF-Lfm-Yp8E_j92P-3rQzbEkDaM8staa4DSooKBVp4AMo2JGlOFbFvJZ_7FHYR89tXoxTXYHXL3WudI5w-XrNyd1h_jbU88x8zHbYmvh4Y03bIYrZwWbOJJQR7F_V7vWBpe2wv7g-nb1Z5DRM2NKlWty3-LLNlgv7KLcnQsVbc4s-zXSjJiKgzjmPeaShGKNkgGigW-meBMPyWlfnvZ6gFUI8EAxEwlSgGNk5Vf0MyaQ17Pb4P1AFraQnF7PIr-8hhTSGfMVguNi-ndJRTgZr4mREkDPXEv_
+        -->
+      </section>
+
+      <section>
+        <h3>Top rank players</h3>
+        <ul>
+          <li>Potato: 90 points</li>
+          <li>Banana: 78 points</li>
+          <li><bdi>انسان</bdi>: 76 points</li>
+          <!-- bdi is very strong and effective tag -->
+        </ul>
+      </section>
+
+      <section class="poll">
+        <h3>what is your favorite browser?</h3>
+        <form>
+          <input list="browser" />
+          <datalist id="browser">
+            <option value="firefox"> </option>
+            <option value="frostyfox"> </option>
+            <option value="chrome"> </option>
+            <option value="dolphin"> </option>
+            <option value="digiDaga"> </option>
+            <option value="opera"> </option>
+          </datalist>
+          <input type="submit" value="choose" />
+        </form>
+      </section>
+    </aside>
+    <!-- end sidebar -->
+
+    <div class="clearfix"></div>
+
+    <footer>Copyright 2015 &copy; All Right Reserved</footer>
+  </body>
+</html>
